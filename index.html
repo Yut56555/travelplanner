@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+            background-color: #333; /* Sfondo scuro per contrasto */
+            color: white; /* Colore del testo */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white; /* Link in bianco */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f0f0f0; /* Grigio chiaro al passaggio del mouse */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+        <p>Pianifica il tuo viaggio con percorsi ecologici, economici o veloci!</p>
+    </header>
+    <main>
+        <section class="planner">
+            <h2>Pianifica il tuo Viaggio</h2>
+            <form id="travelForm">
+                <label for="from">Partenza:</label>
+                <input type="text" id="from" placeholder="Inserisci il punto di partenza" required>
+                
+                <label for="to">Destinazione:</label>
+                <input type="text" id="to" placeholder="Inserisci la destinazione" required>
+                
+                <label for="preferences">Modalità di Viaggio:</label>
+                <select id="preferences">
+                    <option value="BICYCLING">Ecologico</option>
+                    <option value="TRANSIT">Economico</option>
+                    <option value="DRIVING">Veloce</option>
+                </select>
+                
+                <button type="submit">Cerca Percorso</button>
+            </form>
+        </section>
+        <section id="mapSection">
+            <h2>Mappa del Percorso</h2>
+            <div id="map" style="height: 500px;"></div>
+        </section>
+        <section id="results">
+            <h2>Dettagli del Percorso</h2>
+            <div id="routeDetails">
+                <p>Inserisci i dati per pianificare il tuo viaggio.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Travel Planner. Tutti i diritti riservati.</p>
+        <!-- Link con colore bianco -->
+        <p><a href="https://yut56555.github.io/trasportisostenibili/" target="_blank">Ritorna al sito principale</a></p>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeNJjh8Gn_psqsPM1bdY0c3u4ZmCu_Pn4&callback=initMap"></script>
+    <script src="script.js"></script>
+</body>
+</html>

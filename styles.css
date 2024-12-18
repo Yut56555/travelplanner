@@ -1,0 +1,70 @@
+/* Stile generale */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+header {
+    text-align: center;
+    background-color: #034efc;
+    color: white;
+    padding: 2rem 1rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.2rem;
+}
+main {
+    padding: 1.5rem;
+}
+.planner, #results, #mapSection {
+    background: white;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #034efc;
+    border-bottom: 2px solid #034efc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+form input, form select, form button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    background-color: #034efc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+form button:hover {
+    background-color: #023eb5;
+}
+#map {
+    height: 400px;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    background: #034efc;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
